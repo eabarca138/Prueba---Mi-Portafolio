@@ -19,11 +19,12 @@
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
-        <a class="navbar-brand" href="#">E</a>
+        <a class="navbar-brand" href="/">E</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -56,53 +57,215 @@
       </div>
     </nav>
 
+    <!-- ÚLTIMOS TRABAJOS -->
     <section class="container text-center">
       <h2>MIS ÚLTIMOS TRABAJOS</h2>
 
       <div
         id="carousel"
-        class="carousel slide carousel-fade"
+        class="carousel slide carousel-fade px-auto"
         data-ride="carousel"
       >
-        <div class="carousel-inner">
+        <div class="carousel-inner" interval="false">
           <div class="carousel-item active">
             <div class="row">
               <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img
-                  src="assets/img/iguana_page.png"
-                  class="d-block w-100"
-                  alt="..."
-                />
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
+                <div class="card" style="width: 18rem">
+                  <img
+                    src="assets/img/iguana_page.png"
+                    class="d-block w-100"
+                    alt="Iguana Page"
+                  />
+                  <div class="card-body">
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
                   </div>
+                  <button
+                    type="button"
+                    class="btn btn-info"
+                    data-toggle="modal"
+                    data-target="#modal-iguana"
+                  >
+                    Vista completa
+                  </button>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem">
+                  <img
+                    src="assets/img/meet_coffee.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                  <button
+                    type="button"
+                    class="btn btn-info"
+                    data-toggle="modal"
+                    data-target="#modal-meetcoffee"
+                  >
+                    Vista completa
+                  </button>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem">
+                  <img
+                    src="assets/img/suricata.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                  <button
+                    type="button"
+                    class="btn btn-info"
+                    data-toggle="modal"
+                    data-target="#modal-suricata"
+                  >
+                    Vista completa
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <!-- Modal Iguana page-->
+          <div
+            class="modal fade"
+            id="modal-iguana"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Modal title
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    class="imagen-modal"
+                    src="assets/img/modal-iguana.png"
+                    alt=""
+                  />
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
               </div>
-              <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img
-                  src="assets/img/meet_coffee.png"
-                  class="d-block w-100"
-                  alt="..."
-                />
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                  </div>
+            </div>
+          </div>
+
+          <!-- Modal meet coffee-->
+          <div
+            class="modal fade"
+            id="modal-meetcoffee"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Modal title
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    class="imagen-modal"
+                    src="assets/img/modal-meetcoffee.png"
+                    alt=""
+                  />
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
               </div>
-              <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img
-                  src="assets/img/suricata.png"
-                  class="d-block w-100"
-                  alt="..."
-                />
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                  </div>
+            </div>
+          </div>
+
+          <!-- Modal suricata-->
+          <div
+            class="modal fade"
+            id="modal-suricata"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Modal title
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    class="imagen-modal"
+                    src="assets/img/modal-suricata.png"
+                    alt=""
+                  />
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -110,40 +273,148 @@
           <div class="carousel-item">
             <div class="row">
               <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img
-                  src="assets/img/cuppon.png"
-                  class="d-block w-100"
-                  alt="..."
-                />
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
+                <div class="card" style="width: 18rem">
+                  <img
+                    src="assets/img/cuppon.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
                   </div>
+                  <button
+                    type="button"
+                    class="btn btn-info"
+                    data-toggle="modal"
+                    data-target="#modal-cuppon"
+                  >
+                    Vista completa
+                  </button>
+                </div>
               </div>
               <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img
-                  src="assets/img/ricomida.png"
-                  class="d-block w-100"
-                  alt="..."
-                />
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
+                <div class="card" style="width: 18rem">
+                  <img
+                    src="assets/img/ricomida.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
                   </div>
+                  <button
+                    type="button"
+                    class="btn btn-info"
+                    data-toggle="modal"
+                    data-target="#modal-ricomida"
+                  >
+                    Vista completa
+                  </button>
+                </div>
               </div>
               <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img
-                  src="assets/img/dmark.png"
-                  class="d-block w-100"
-                  alt="..."
-                />
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
+                <div class="card" style="width: 18rem">
+                  <img
+                    src="assets/img/dmark.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal cuppon-->
+          <div
+            class="modal fade"
+            id="modal-cuppon"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Modal title
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    class="imagen-modal"
+                    src="assets/img/modal-cuppon.png"
+                    alt=""
+                  />
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal ricomida-->
+          <div
+            class="modal fade"
+            id="modal-ricomida"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Ricomida</h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    class="imagen-modal"
+                    src="assets/img/modal-ricomida.png"
+                    alt=""
+                  />
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -169,19 +440,61 @@
       </div>
     </section>
 
-
-
-
-
+    <section class="contacto bg-dark">
+      <h2></h2>
+      <div
+        class="typeform-widget"
+        data-url="https://form.typeform.com/to/F23kLk8d"
+        style="width: 100%; height: 500px"
+      ></div>
+      <script>
+        (function () {
+          var qs,
+            js,
+            q,
+            s,
+            d = document,
+            gi = d.getElementById,
+            ce = d.createElement,
+            gt = d.getElementsByTagName,
+            id = "typef_orm",
+            b = "https://embed.typeform.com/";
+          if (!gi.call(d, id)) {
+            js = ce.call(d, "script");
+            js.id = id;
+            js.src = b + "embed.js";
+            q = gt.call(d, "script")[0];
+            q.parentNode.insertBefore(js, q);
+          }
+        })();
+      </script>
+      <div
+        style="
+          font-family: Sans-Serif;
+          font-size: 12px;
+          color: #999;
+          opacity: 0.5;
+          padding-top: 5px;
+        "
+      >
+        powered by
+        <a
+          href="https://admin.typeform.com/signup?utm_campaign=F23kLk8d&utm_source=typeform.com-01EQGH2F6NN4WVQ4AF72YCW0RE-free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=ES"
+          style="color: #999"
+          target="_blank"
+          >Typeform</a
+        >
+      </div>
+    </section>
 
     <footer class="bg-dark">
-        <div class="container text-center text-light">
-<p class="d-inline-block">ESTEBAN</p>
-<div class="d-inline-block">
-<i class="fab fa-github-square"></i>
-<i class="fab fa-instagram-square"></i>
-</div>
-</div>
+      <div class="container text-center text-light">
+        <p class="d-inline-block">ESTEBAN</p>
+        <div class="d-inline-block">
+          <i class="fab fa-github-square"></i>
+          <i class="fab fa-instagram-square"></i>
+        </div>
+      </div>
     </footer>
     <script
       src="https://code.jquery.com/jquery-3.5.1.min.js"
