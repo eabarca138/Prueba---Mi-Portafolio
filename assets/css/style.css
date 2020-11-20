@@ -1,5 +1,56 @@
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar-brand{
+    font-family: 'Fontdiner Swanky', cursive;
+    font-size: 2rem;
+}
+
+h2, h3{
+    color: white;
+    font-weight: 700;
+}
+
+main{
+    background: rgb(52,58,64);
+background: linear-gradient(180deg, rgba(52,58,64,1) 0%, rgba(38,38,38,1) 100%);
+margin-top: auto;
+}
+
+
+
+
+/* MODALES */
+
 .imagen-modal{
     width:22rem;
     height: 35rem;
 }
 
+.carousel-control-prev{
+    bottom: 40px;
+}
+
+.carousel-control-next{
+    bottom: 40px;
+}
+
+/*EXPERIENCIA*/
+
+.icono-sonido{
+    width: 8rem;
+    height: 8rem;
+}
+
+/* FOOTER */
+
+footer{
+    font-size:3rem;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}

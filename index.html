@@ -13,6 +13,13 @@
     />
     <!-- MI CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&display=swap" rel="stylesheet">
+
     <!-- FONTAWESOME -->
     <script
       src="https://kit.fontawesome.com/2257f7ee6e.js"
@@ -22,9 +29,9 @@
 
   <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="/">E</a>
+        <a class="navbar-brand pt-2 pb-2" href="/">E</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -37,46 +44,56 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ml-auto pt-2 pb-2">
             <li class="nav-item active">
-              <a class="nav-link" href="#"
+              <a class="nav-link" href="#sobremi"
                 >Sobre mi <span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Experiencia</a>
+              <a class="nav-link" href="#trabajos">Trabajos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Trabajos</a>
+              <a class="nav-link" href="#experiencia">Experiencia</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
+              <a class="nav-link" href="#contacto">Contacto</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
+
+<main class="mt-5 pt-5">
+
+
+
+  <section id="sobremi" class="text-center container">
+    <h2>Descripción</h2>
+
+  </section>
     <!-- ÚLTIMOS TRABAJOS -->
-    <section class="container text-center">
-      <h2>MIS ÚLTIMOS TRABAJOS</h2>
+    <section id="trabajos" class="container text-center mt-5 pt-5 px-auto">
+      <h2 class="pb-4">MIS ÚLTIMOS TRABAJOS</h2>
 
       <div
         id="carousel"
-        class="carousel slide carousel-fade px-auto"
+        class="carousel slide carousel-fade"
         data-ride="carousel"
       >
         <div class="carousel-inner" interval="false">
           <div class="carousel-item active">
             <div class="row">
-              <div class="col">
-                <div class="card" style="width: 18rem">
+              <div class="col-md-4 col-sm-12">
+                <div class="card" style="width: 100%">
                   <img
                     src="assets/img/iguana_page.png"
                     class="d-block w-100"
                     alt="Iguana Page"
                   />
                   <div class="card-body">
+                    <h4>Iguana page</h4>
                     <p class="card-text">
                       Some quick example text to build on the card title and
                       make up the bulk of the card's content.
@@ -92,14 +109,15 @@
                   </button>
                 </div>
               </div>
-              <div class="col">
-                <div class="card" style="width: 18rem">
+              <div class="col-md-4 col-sm-12">
+                <div class="card" style="width: 100%">
                   <img
                     src="assets/img/meet_coffee.png"
                     class="d-block w-100"
                     alt="..."
                   />
                   <div class="card-body">
+                    <h4>Meet&coffee</h4>
                     <p class="card-text">
                       Some quick example text to build on the card title and
                       make up the bulk of the card's content.
@@ -115,14 +133,15 @@
                   </button>
                 </div>
               </div>
-              <div class="col">
-                <div class="card" style="width: 18rem">
+              <div class="col-md-4 col-sm-12">
+                <div class="card" style="width: 100%">
                   <img
                     src="assets/img/suricata.png"
                     class="d-block w-100"
                     alt="..."
                   />
                   <div class="card-body">
+                    <h4>Suricata</h4>
                     <p class="card-text">
                       Some quick example text to build on the card title and
                       make up the bulk of the card's content.
@@ -152,8 +171,8 @@
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">
-                    Modal title
+                  <h5 class="modal-title ml-auto" id="exampleModalLabel">
+                    Iguana page
                   </h5>
                   <button
                     type="button"
@@ -168,7 +187,7 @@
                   <img
                     class="imagen-modal"
                     src="assets/img/modal-iguana.png"
-                    alt=""
+                    alt="Iguana page"
                   />
                 </div>
                 <div class="modal-footer">
@@ -195,8 +214,8 @@
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">
-                    Modal title
+                  <h5 class="modal-title ml-auto" id="exampleModalLabel">
+                    Meet&coffee
                   </h5>
                   <button
                     type="button"
@@ -211,7 +230,7 @@
                   <img
                     class="imagen-modal"
                     src="assets/img/modal-meetcoffee.png"
-                    alt=""
+                    alt="meetcoffee"
                   />
                 </div>
                 <div class="modal-footer">
@@ -238,8 +257,8 @@
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">
-                    Modal title
+                  <h5 class="modal-title ml-auto" id="exampleModalLabel">
+                    Suricata
                   </h5>
                   <button
                     type="button"
@@ -272,14 +291,15 @@
 
           <div class="carousel-item">
             <div class="row">
-              <div class="col">
-                <div class="card" style="width: 18rem">
+              <div class="col-md-4 col-sm-12">
+                <div class="card" style="width: 100%">
                   <img
                     src="assets/img/cuppon.png"
                     class="d-block w-100"
-                    alt="..."
+                    alt="Cuppon"
                   />
                   <div class="card-body">
+                    <h4>Cuppon</h4>
                     <p class="card-text">
                       Some quick example text to build on the card title and
                       make up the bulk of the card's content.
@@ -295,14 +315,15 @@
                   </button>
                 </div>
               </div>
-              <div class="col">
-                <div class="card" style="width: 18rem">
+              <div class="col-md-4 col-sm-12">
+                <div class="card" style="width: 100%">
                   <img
                     src="assets/img/ricomida.png"
                     class="d-block w-100"
-                    alt="..."
+                    alt="Ricomida"
                   />
                   <div class="card-body">
+                    <h4>Ricomida</h4>
                     <p class="card-text">
                       Some quick example text to build on the card title and
                       make up the bulk of the card's content.
@@ -318,19 +339,27 @@
                   </button>
                 </div>
               </div>
-              <div class="col">
-                <div class="card" style="width: 18rem">
+              <div class="col-md-4 col-sm-12">
+                <div class="card" style="width: 100%">
                   <img
                     src="assets/img/dmark.png"
                     class="d-block w-100"
-                    alt="..."
+                    alt="Dmark"
                   />
                   <div class="card-body">
+                    <h4>Dmark</h4>
                     <p class="card-text">
                       Some quick example text to build on the card title and
                       make up the bulk of the card's content.
                     </p>
                   </div>
+                  <button
+                  type="button"
+                  class="btn btn-info"
+                  data-target="#"
+                >
+                  Vista completa
+                </button>
                 </div>
               </div>
             </div>
@@ -347,8 +376,8 @@
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">
-                    Modal title
+                  <h5 class="modal-title ml-auto" id="exampleModalLabel">
+                    Cuppon
                   </h5>
                   <button
                     type="button"
@@ -389,7 +418,7 @@
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Ricomida</h5>
+                  <h5 class="modal-title ml-auto" id="exampleModalLabel">Ricomida</h5>
                   <button
                     type="button"
                     class="close"
@@ -439,9 +468,20 @@
         </a>
       </div>
     </section>
+                  <!-- EXPERIENCIA -->
+    <section id="experiencia" class="text-center container py-5">
+      <h2 class="py-2">Experiencia</h2>
+      <div>
+        <img src="assets/img/waveform.png" alt="Icono waveform" class="icono-sonido">
+        <h3 class="pt-3 pb-5">Ing. en Sonido</h3>
+      </div>
+    </section>
+  </main>
 
-    <section class="contacto bg-dark">
-      <h2></h2>
+  
+    <!-- FORMULARIO DE CONTACTO -->
+
+    <section id="contacto">
       <div
         class="typeform-widget"
         data-url="https://form.typeform.com/to/F23kLk8d"
@@ -469,11 +509,12 @@
         })();
       </script>
       <div
+      class="bg-dark"
         style="
           font-family: Sans-Serif;
           font-size: 12px;
-          color: #999;
-          opacity: 0.5;
+          color:   rgba(52,58,64,1);
+
           padding-top: 5px;
         "
       >
@@ -488,11 +529,15 @@
     </section>
 
     <footer class="bg-dark">
-      <div class="container text-center text-light">
-        <p class="d-inline-block">ESTEBAN</p>
-        <div class="d-inline-block">
+      <div class="container text-light text-center">
+        <p class="d-inline-block mr-5">ESTEBAN</p>
+        <div class="d-inline-block ml-5">
+          <a href="https://github.com/eabarca138">
           <i class="fab fa-github-square"></i>
+        </a>
+        <a href="https://www.instagram.com/estebandikoot/">
           <i class="fab fa-instagram-square"></i>
+        </a>
         </div>
       </div>
     </footer>
