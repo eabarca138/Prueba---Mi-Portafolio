@@ -16,10 +16,14 @@ h2, h3{
 main{
     background: rgb(52,58,64);
 background: linear-gradient(180deg, rgba(52,58,64,1) 0%, rgba(38,38,38,1) 100%);
-margin-top: auto;
+padding-top: 20rem;
 }
 
+/* CARDS */
 
+.card-body p{
+    text-align: left;
+}
 
 
 /* MODALES */
@@ -27,6 +31,10 @@ margin-top: auto;
 .imagen-modal{
     width:22rem;
     height: 35rem;
+}
+
+.img-suricata{
+    height: 30rem;
 }
 
 .carousel-control-prev{
