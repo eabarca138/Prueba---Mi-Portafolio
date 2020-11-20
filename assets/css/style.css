@@ -1,6 +1,6 @@
 
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 .navbar-brand{
@@ -8,9 +8,13 @@ body{
     font-size: 2rem;
 }
 
-h2, h3{
+h1, h2, h3{
     color: white;
     font-weight: 700;
+}
+
+h1{
+    vertical-align: top;
 }
 
 main{
@@ -19,10 +23,22 @@ background: linear-gradient(180deg, rgba(52,58,64,1) 0%, rgba(38,38,38,1) 100%);
 padding-top: 20rem;
 }
 
+.descripcion img{
+    height: 15rem;
+    width: 15rem;
+    border-radius: 15%;
+    margin: 0 auto;
+    margin-right: 3rem;
+}
+
 /* CARDS */
 
 .card-body p{
     text-align: left;
+}
+
+.card{
+    margin-top: 3rem;
 }
 
 
@@ -35,6 +51,10 @@ padding-top: 20rem;
 
 .img-suricata{
     height: 30rem;
+}
+
+.img-cuppon{
+    height:25rem ;
 }
 
 .carousel-control-prev{
@@ -62,3 +82,27 @@ footer a{
     color: white;
     text-decoration: none;
 }
+
+footer p{
+    font-size: 1.7rem;
+    vertical-align: middle;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .centrado h1, .centrado img{
+        text-align: center;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .centrado img{
+        margin-right: 0;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .iconos{
+    text-align: center;
+    }
+  }

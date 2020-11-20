@@ -7,7 +7,7 @@ $('#myModal').on('shown.bs.modal', function () {
 /* SMOOTH SCROLLING */
 
 
-$("a").click(function(event){
+$("nav a").click(function(event){
   if(this.hash !== "") {
     event.preventDefault()
 
